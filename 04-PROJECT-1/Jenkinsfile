@@ -24,7 +24,7 @@ pipeline{
                 sh '''
                     pwd
                     cd 04-PROJECT-1/
-                    terraform init
+                    terraform init -reconfigure
                     terraform plan -out tfplan
                     terraform show -no-color tfplan > tfplan.txt
                 '''
