@@ -16,10 +16,10 @@ terraform {
   backend "s3" {
     bucket = "opskillup-c856b8eec35d"
     key    = "04-PROJECT-1/state.tfstate"
-    region = "ap-northeast-1"
+    region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "ap-northeast-1"
+  region = "us-east-1"
 }
